@@ -9,6 +9,8 @@ import java.util.HashMap;
 public class Tetris {
   public static void main(String[] args) {
     Map<String, Shapes> shapes = new HashMap<>();
+
+    //Lindo tabuleiro
     Board newBoard = new Board(20, 10);
 
     shapes.put("TShape", new Shapes(
@@ -91,22 +93,6 @@ public class Tetris {
     Functions.printShape("IShape", shapes);
     System.out.println();
     Functions.printShape("JShape", shapes);
-    System.out.println();
-    
-    for (int i = 0; i < newBoard.WIDTH + 2; i++) {
-      System.out.print("\u2582");
-    }
-    System.out.println();
-    for (int i = 0; i < newBoard.HEIGHT; i++) {
-      System.out.print("\u2588");
-      for (int j = 0; j < newBoard.WIDTH; j++) {
-        System.out.print(' ');
-      }
-      System.out.println("\u2588");
-    }
-    for (int i = 0; i < newBoard.WIDTH + 2; i++) {
-      System.out.print("\u2588");
-    }
     System.out.println();
   };
 }
