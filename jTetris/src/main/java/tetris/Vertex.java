@@ -12,4 +12,8 @@ public class Vertex {
     this.x = x;
     this.y = y;
   };
+
+  public void getVertex(){
+    System.out.println(x + " " + y);
+  };
 }

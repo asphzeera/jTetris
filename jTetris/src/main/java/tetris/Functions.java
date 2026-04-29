@@ -3,17 +3,10 @@ package tetris;
 import java.util.Map;
 
 /**
- * Shapes
+ * Functions
  */
-public class Shapes {
-  Vertex[] dots;
-  public Shapes(Vertex[] dots){
-    this.dots = dots;
-  };
-  public Vertex[] getShapes(){
-    return this.dots;
-  };
-  public void printShape(String key, Map<String, Shapes> shapeMap){
+public class Functions {
+  public static void printShape(String key, Map<String, Shapes> shapeMap){
     int[][] newShape = new int[4][4];
     Shapes shomting = shapeMap.get(key);
     Vertex cord1 = shomting.dots[0];
@@ -33,8 +26,13 @@ public class Shapes {
     }
     for (int i = 0; i < 4; i++) {
       for (int j = 0; j < 4; j++) {
-        System.out.println(newShape[i][j]);
+        if(newShape[i][j] == 0){
+          System.out.print(" ");
+        }else{
+          System.out.print("\u2593");
+        };
       }
+      System.out.println();
     }
   };
 }
