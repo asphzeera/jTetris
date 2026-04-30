@@ -12,6 +12,7 @@ public class Board {
     this.WIDTH = w;
     board = new char[h][w];
   };
+
   public void printBoard(Board newBoard){
     for (int i = 0; i < newBoard.WIDTH + 2; i++) {
       System.out.print("\u2582");

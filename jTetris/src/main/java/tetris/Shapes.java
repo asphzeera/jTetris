@@ -37,4 +37,67 @@ public class Shapes {
       }
     }
   };
+  public void startShapes(Map<String, Shapes> shapes){ 
+    shapes.put("TShape", new Shapes(
+      new Vertex[]{
+        new Vertex(0, 1),
+        new Vertex(1, 1),
+        new Vertex(1, 2),
+        new Vertex(2, 1),
+      }
+    ));
+
+    shapes.put("JShape", new Shapes(
+      new Vertex[]{
+        new Vertex(0, 2),
+        new Vertex(1, 2),
+        new Vertex(2, 2),
+        new Vertex(2, 1),
+      }
+    ));
+
+    shapes.put("IShape", new Shapes(
+      new Vertex[]{
+        new Vertex(0, 1),
+        new Vertex(1, 1),
+        new Vertex(2, 1),
+        new Vertex(3, 1),
+      }
+    ));
+
+    shapes.put("LShape", new Shapes(
+      new Vertex[]{
+        new Vertex(0, 1),
+        new Vertex(1, 1),
+        new Vertex(2, 1),
+        new Vertex(2, 2),
+      }
+    ));
+
+    shapes.put("SShape", new Shapes(
+      new Vertex[]{
+        new Vertex(1, 2),
+        new Vertex(1, 1),
+        new Vertex(2, 1),
+        new Vertex(2, 0),
+      }
+    ));
+
+    shapes.put("ZShape", new Shapes(
+      new Vertex[]{
+        new Vertex(1, 1),
+        new Vertex(1, 2),
+        new Vertex(2, 2),
+        new Vertex(2, 3),
+      }
+    ));
+    shapes.put("OShape", new Shapes(
+      new Vertex[]{
+        new Vertex(1, 1),
+        new Vertex(1, 2),
+        new Vertex(2, 1),
+        new Vertex(2, 2),
+      }
+    ));
+  };
 }
